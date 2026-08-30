@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ashutosh Ray | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gradient-text { background: linear-gradient(90deg, #c7d36c, #cb426d); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-[#0f172a] text-slate-200 selection:bg-blue-500/30">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold gradient-text">AR.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition">About</a>
+                <a href="#education" class="hover:text-blue-400 transition">Education</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+            </div>
+            <a href="#contact" class="md:hidden text-blue-400"><i class="fas fa-bars"></i></a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex items-center pt-20 px-6">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up">
+                <h2 class="text-blue-400 font-mono mb-4 text-lg">Hi, My Name is -  </h2>
+                <h1 class="text-5xl md:text-2xl font-bold text-white mb-6">Ashutosh Ray</h1>
+                <h3 class="text-2xl md:text-4xl font-semibold text-slate-400 mb-6">C++ & DSA Learner | Aspiring Software Developer</h3>
+                <p class="text-slate-400 max-w-xl mb-10 leading-relaxed">
+                    I am a Computer Science student passionate about building efficient software solutions. 
+                    I specialize in low-level programming with C++ and enjoy tackling complex algorithmic challenges.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-medium transition duration-300 transform hover:-translate-y-1">View Projects</a>
+                    <a href="#contact" class="border border-blue-600 text-blue-400 hover:bg-blue-600/10 px-8 py-3 rounded-lg font-medium transition duration-300">Contact Me</a>
+                </div>
+            </div>
+            <div class="hidden md:block relative" data-aos="zoom-in">
+                <div class="w-72 h-72 md:w-96 md:h-96 bg-blue-500/20 rounded-full absolute -top-4 -left-4 animate-pulse"></div>
+                <div class="w-72 h-72 md:w-96 md:h-96 glass rounded-2xl flex items-center justify-center relative z-10 border-blue-500/30">
+                    <i class="fas fa-code text-9xl text-blue-500/50"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Me -->
+    <section id="about" class="py-24 px-6 bg-[#1e293b]/30">
+        <div class="container mx-auto max-w-4xl" data-aos="fade-up">
+            <div class="flex items-center mb-12">
+                <h2 class="text-3xl font-bold text-white mr-4">01. About Me</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            <div class="grid md:grid-cols-5 gap-12">
+                <div class="md:col-span-3 space-y-4 text-slate-400">
+                    <p>
+                        Hello! I'm Ashutosh, a dedicated Computer Science student with a deep interest in how things work under the hood. My journey in tech started with a curiosity for problem-solving, which led me to dive deep into the world of programming.
+                    </p>
+                    <p>
+                        Currently, I'm focusing on mastering <strong>Data Structures and Algorithms</strong> using C++. I believe that writing efficient, clean, and scalable code is an art form. 
+                    </p>
+                    <p>
+                        My main focus these days is building solid foundations in software development and contributing to open-source projects to refine my skills in a collaborative environment.
+                    </p>
+                </div>
+                <div class="md:col-span-2">
+                    <div class="p-4 border-2 border-blue-500/20 rounded-xl">
+                        <h4 class="text-white font-semibold mb-4 italic text-center">"Code is like humor. When you have to explain it, it’s bad."</h4>
+                        <div class="grid grid-cols-2 gap-2 text-sm text-blue-400">
+                            <span class="flex items-center"><i class="fas fa-caret-right mr-2"></i> Problem Solver</span>
+                            <span class="flex items-center"><i class="fas fa-caret-right mr-2"></i> Quick Learner</span>
+                            <span class="flex items-center"><i class="fas fa-caret-right mr-2"></i> Tech Enthusiast</span>
+                            <span class="flex items-center"><i class="fas fa-caret-right mr-2"></i> Collaborator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="Education" class="py-24 px-6">
+        <div class="container mx-auto max-w-4xl" data-aos="fade-up">
+            <div class="flex items-center mb-12">
+                <h2 class="text-3xl font-bold text-white mr-4">02. Education</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            <div class="space-y-8 border-l-2 border-blue-500/30 ml-4 pl-8">
+                <!-- Education Item 1 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-0 w-4 h-4 bg-blue-500 rounded-full border-4 border-[#0f172a]"></div>
+                    <h3 class="text-xl font-bold text-white">Bachelor of Technology in Computer Science</h3>
+                    <p class="text-blue-400 font-medium">IILM UNIVERSITY, Greater Noida</p>
+                    <p class="text-slate-500 text-sm"> 2025-2029 </p>
+                    <p class="mt-2 text-slate-400 italic">Relevant Coursework: Data Structures, Algorithms, DBMS, Operating Systems.</p>
+                </div>
+                <!-- Education Item 2 -->
+                <div class="relative">
+                    <div class="absolute -left-[41px] top-0 w-4 h-4 bg-slate-700 rounded-full border-4 border-[#0f172a]"></div>
+                    <h3 class="text-xl font-bold text-white">Higher Secondary Education</h3>
+                    <p class="text-blue-400 font-medium">BIHAR PUBIC SCHOOL,SIWAN</p>
+                    <p class="text-slate-500 text-sm">Graduated 2022</p>
+                    <p class="mt-2 text-slate-400 italic">Focus on Physics, Chemistry, and Mathematics.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6 bg-[#1e293b]/30">
+        <div class="container mx-auto max-w-4xl" data-aos="fade-up">
+            <div class="flex items-center mb-12">
+                <h2 class="text-3xl font-bold text-white mr-4">03. Tech Stack</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- Skill Cards -->
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fab fa-cuttlefish text-4xl text-blue-400 mb-4"></i>
+                    <p class="font-semibold">C / C++</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fab fa-python text-4xl text-yellow-400 mb-4"></i>
+                    <p class="font-semibold">Python</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-project-diagram text-4xl text-green-400 mb-4"></i>
+                    <p class="font-semibold">DSA</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-cubes text-4xl text-purple-400 mb-4"></i>
+                    <p class="font-semibold">OOPs</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fab fa-html5 text-4xl text-orange-500 mb-4"></i>
+                    <p class="font-semibold">HTML & CSS</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fab fa-git-alt text-4xl text-red-500 mb-4"></i>
+                    <p class="font-semibold">Git & GitHub</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-database text-4xl text-cyan-400 mb-4"></i>
+                    <p class="font-semibold">SQL</p>
+                </div>
+                <div class="glass p-6 rounded-xl text-center hover:border-blue-500/50 transition duration-300">
+                    <i class="fas fa-terminal text-4xl text-slate-400 mb-4"></i>
+                    <p class="font-semibold">Linux</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex items-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-white mr-4">04. Selected Projects</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="glass rounded-xl overflow-hidden group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center overflow-hidden">
+                        <i class="fas fa-laptop-code text-6xl text-slate-700 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Algorithm Visualizer</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3">A desktop application built with C++ to visualize various sorting and searching algorithms in real-time.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">C++</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">SFML</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">DSA</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-slate-300 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                            <a href="#" class="text-slate-300 hover:text-white"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 2 -->
+                <div class="glass rounded-xl overflow-hidden group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center">
+                        <i class="fas fa-shield-alt text-6xl text-slate-700 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Student Database System</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3">A file-handling based system to manage student records, using Object-Oriented Programming principles.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">C++</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">File I/O</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">OOPs</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-slate-300 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 3 -->
+                <div class="glass rounded-xl overflow-hidden group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-48 bg-slate-800 flex items-center justify-center">
+                        <i class="fas fa-globe text-6xl text-slate-700 group-hover:scale-110 transition duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white mb-2">Personal Portfolio</h3>
+                        <p class="text-slate-400 text-sm mb-4 line-clamp-3">A responsive personal portfolio website built with modern web technologies to showcase my journey.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">HTML</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">Tailwind</span>
+                            <span class="text-xs bg-blue-500/10 text-blue-400 px-2 py-1 rounded">JS</span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-slate-300 hover:text-white"><i class="fab fa-github"></i> Source</a>
+                            <a href="#" class="text-slate-300 hover:text-white"><i class="fas fa-external-link-alt"></i> Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-24 px-6 bg-[#1e293b]/30">
+        <div class="container mx-auto max-w-4xl" data-aos="fade-up">
+            <div class="flex items-center mb-12">
+                <h2 class="text-3xl font-bold text-white mr-4">05. Achievements</h2>
+                <div class="h-[1px] bg-slate-700 flex-grow"></div>
+            </div>
+            <ul class="space-y-6">
+                <li class="flex items-start">
+                    <i class="fas fa-trophy text-yellow-500 mt-1 mr-4"></i>
+                    <div>
+                        <h4 class="text-white font-semibold">Solved 200+ Problems on LeetCode/GeeksForGeeks</h4>
+                        <p class="text-slate-400 text-sm">Focusing on Arrays, Strings, and Linked Lists.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-certificate text-blue-500 mt-1 mr-4"></i>
+                    <div>
+                        <h4 class="text-white font-semibold">C++ Specialization Certificate</h4>
+                        <p class="text-slate-400 text-sm">Certified by [Platform Name] for advanced proficiency in C++.</p>
+                    </div>
+                </li>
+                <li class="flex items-start">
+                    <i class="fas fa-users text-purple-500 mt-1 mr-4"></i>
+                    <div>
+                        <h4 class="text-white font-semibold">Hackathon Finalist - TechQuest 2023</h4>
+                        <p class="text-slate-400 text-sm">Worked in a team of 4 to develop a sustainable energy tracking app.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-4xl font-bold text-white mb-4">Get In Touch</h2>
+                <p class="text-slate-400">I'm currently looking for new opportunities and internships. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div data-aos="fade-right">
+                    <h3 class="text-2xl font-bold text-white mb-6">Contact Info</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 glass rounded-lg flex items-center justify-center mr-4 text-blue-400">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <p class="text-slate-300">ashutosh.ray@email.com</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 glass rounded-lg flex items-center justify-center mr-4 text-blue-400">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <a href="#" class="text-slate-300 hover:text-blue-400 transition">linkedin.com/in/ashutosh-ray</a>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-12 h-12 glass rounded-lg flex items-center justify-center mr-4 text-blue-400">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <a href="#" class="text-slate-300 hover:text-blue-400 transition">github.com/ashutoshray</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-left">
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Name" class="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                        <input type="email" placeholder="Email" class="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition">
+                        <textarea rows="4" placeholder="Message" class="w-full bg-[#1e293b] border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition"></textarea>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center">
+        <div class="flex justify-center space-x-6 mb-6">
+            <a href="#" class="text-slate-500 hover:text-white text-xl transition"><i class="fab fa-github"></i></a>
+            <a href="#" class="text-slate-500 hover:text-white text-xl transition"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-slate-500 hover:text-white text-xl transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-slate-500 hover:text-white text-xl transition"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p class="text-slate-500 text-sm">Designed & Built by Ashutosh Ray &copy; 2026</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
