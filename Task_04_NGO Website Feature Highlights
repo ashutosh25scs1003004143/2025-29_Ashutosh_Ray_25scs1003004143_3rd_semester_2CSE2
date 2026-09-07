@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InAmigos Foundation | Create a Better Tomorrow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; background-color: #FDFBF9; }
+        .feature-card:hover { transform: translateY(-5px); transition: all 0.3s ease; }
+        .annotation-tag {
+            background: #7C3AED;
+            color: white;
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            position: absolute;
+            top: -10px;
+            left: 10px;
+            z-index: 20;
+        }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <!-- Section 1: Header -->
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-emerald-600 rounded-lg flex items-center justify-center text-white">
+                    <i data-lucide="leaf"></i>
+                </div>
+                <span class="text-2xl font-bold text-emerald-900">InAmigos <span class="text-emerald-600 font-light">Foundation</span></span>
+            </div>
+            
+            <div class="hidden md:flex items-center gap-8 font-medium text-slate-600">
+                <a href="#" class="hover:text-emerald-600">Home</a>
+                <a href="#" class="hover:text-emerald-600">About Us</a>
+                <a href="#" class="hover:text-emerald-600">Campaigns</a>
+                <a href="#" class="hover:text-emerald-600">Get Involved</a>
+                <a href="#" class="hover:text-emerald-600">Contact</a>
+            </div>
+
+            <button class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-semibold transition">
+                Donate Now
+            </button>
+        </div>
+    </nav>
+
+    <!-- Section 2: Hero -->
+    <header class="relative py-20 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-5xl md:text-6xl font-bold text-emerald-950 leading-tight">
+                    Together, We Can Create a <span class="text-emerald-600">Better Tomorrow</span>
+                </h1>
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed">
+                    Join us in creating meaningful change through community support, volunteering, and impactful campaigns. Every small action ripples into a big difference.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <button class="bg-emerald-700 hover:bg-emerald-800 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2">
+                        Donate Now <i data-lucide="heart" class="w-5 h-5"></i>
+                    </button>
+                    <button class="border-2 border-emerald-700 text-emerald-700 hover:bg-emerald-50 px-8 py-4 rounded-xl font-bold">
+                        Become a Volunteer
+                    </button>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 bg-orange-100 w-64 h-64 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
+                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?auto=format&fit=crop&q=80&w=800" 
+                     alt="Community support" 
+                     class="rounded-3xl shadow-2xl relative z-10 border-8 border-white">
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 3: Features Showcase -->
+    <section class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-emerald-950 italic">Feature Showcase</h2>
+                <p class="text-slate-500">Core functionalities designed for impact</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Feature 1: Donation -->
+                <div class="relative group">
+                    <span class="annotation-tag italic">Donation → Easy Support</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 feature-card h-full">
+                        <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="credit-card"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Donate & Support</h3>
+                        <p class="text-slate-600 mb-6">Make a secure contribution and help us support communities in need across the globe.</p>
+                        <a href="#" class="text-emerald-600 font-bold flex items-center gap-2 hover:gap-3 transition-all">
+                            Donate Now <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Feature 2: Volunteer -->
+                <div class="relative group">
+                    <span class="annotation-tag italic">Volunteer → Easy Registration</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 feature-card h-full">
+                        <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-lg flex items-center justify-center mb-6">
+                            <i data-lucide="users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Become a Volunteer</h3>
+                        <p class="text-slate-600 mb-6">Join our team and contribute your time, skills, and passion to our mission.</p>
+                        <button class="w-full bg-emerald-700 text-white py-3 rounded-lg font-semibold hover:bg-emerald-800 transition">Join Us Today</button>
+                    </div>
+                </div>
+
+                <!-- Feature 3: Impact -->
+                <div class="relative group lg:col-span-1">
+                    <span class="annotation-tag italic">Impact → Transparency</span>
+                    <div class="bg-emerald-900 p-8 rounded-2xl shadow-lg text-white feature-card h-full">
+                        <h3 class="text-xl font-bold mb-6">Our Impact</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-orange-400">10k+</span>
+                                <span class="text-emerald-100 text-sm">Lives Impacted</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-orange-400">250+</span>
+                                <span class="text-emerald-100 text-sm">Active Volunteers</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="text-3xl font-bold text-orange-400">50+</span>
+                                <span class="text-emerald-100 text-sm">Total Campaigns</span>
+                            </div>
+                        </div>
+                        <button class="mt-8 text-sm border-b border-orange-400 pb-1 text-orange-400">View Our Impact Report</button>
+                    </div>
+                </div>
+
+                <!-- Feature 4: Campaigns -->
+                <div class="relative lg:col-span-2 group">
+                    <span class="annotation-tag italic">Campaigns → Current Initiatives</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 h-full">
+                        <h3 class="text-xl font-bold mb-6">Ongoing Campaigns</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="border rounded-xl overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb773b09?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover" alt="campaign">
+                                <div class="p-4">
+                                    <h4 class="font-bold text-sm">Green Earth Initiative</h4>
+                                    <div class="w-full bg-slate-100 h-2 rounded-full mt-3 overflow-hidden">
+                                        <div class="bg-emerald-500 h-full w-[75%]"></div>
+                                    </div>
+                                    <div class="flex justify-between text-xs mt-2 font-medium">
+                                        <span>$3,500 of $5,000</span>
+                                        <span class="text-emerald-600">75%</span>
+                                    </div>
+                                    <button class="w-full mt-4 text-xs font-bold py-2 bg-slate-900 text-white rounded">Support</button>
+                                </div>
+                            </div>
+                            <div class="border rounded-xl overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover" alt="campaign">
+                                <div class="p-4">
+                                    <h4 class="font-bold text-sm">Education for All</h4>
+                                    <div class="w-full bg-slate-100 h-2 rounded-full mt-3 overflow-hidden">
+                                        <div class="bg-emerald-500 h-full w-[40%]"></div>
+                                    </div>
+                                    <div class="flex justify-between text-xs mt-2 font-medium">
+                                        <span>$2,000 of $5,000</span>
+                                        <span class="text-emerald-600">40%</span>
+                                    </div>
+                                    <button class="w-full mt-4 text-xs font-bold py-2 bg-slate-900 text-white rounded">Support</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feature 5: Testimonials -->
+                <div class="relative group">
+                    <span class="annotation-tag italic">Testimonials → Credibility</span>
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 h-full">
+                        <h3 class="text-xl font-bold mb-6 text-center">What People Say</h3>
+                        <div class="text-center">
+                            <img src="https://i.pravatar.cc/100?img=32" alt="avatar" class="w-16 h-16 rounded-full mx-auto mb-4 border-2 border-emerald-500">
+                            <div class="flex justify-center gap-1 mb-2 text-orange-400">
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                                <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            </div>
+                            <p class="text-slate-600 text-sm italic mb-4">"InAmigos is transparent and really makes an effort to reach rural areas."</p>
+                            <h4 class="font-bold text-sm">Sarah Jenkins</h4>
+                            <p class="text-xs text-slate-400 text-emerald-600 font-medium">Monthly Donor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Final CTA -->
+    <section class="py-20 px-6">
+        <div class="max-w-5xl mx-auto bg-emerald-800 rounded-[3rem] p-12 text-center text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 p-10 opacity-10">
+                <i data-lucide="heart" class="w-40 h-40"></i>
+            </div>
+            <h2 class="text-4xl font-bold mb-4">Be a Part of the Change</h2>
+            <p class="text-emerald-100 mb-10 max-w-xl mx-auto">
+                Your time, support, and contribution can make a real difference in the lives of those who need it most.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <button class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-bold transition">
+                    Donate Now
+                </button>
+                <button class="bg-white text-emerald-800 hover:bg-emerald-50 px-8 py-3 rounded-full font-bold transition">
+                    Volunteer With Us
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t text-center text-slate-400 text-sm">
+        <p>&copy; 2023 InAmigos Foundation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
